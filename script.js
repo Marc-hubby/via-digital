@@ -5,3 +5,7 @@ function calc(){const m=+document.getElementById('monthly').value||0,y=+document
 function idea(){const ideas=['Newsletter sobre herramientas de IA para autónomos','Comparador de aplicaciones para estudiantes','Guía de privacidad para familias','Calculadora de coste real de suscripciones','Directorio de herramientas digitales españolas'];document.getElementById('idea').textContent=ideas[Math.floor(Math.random()*ideas.length)]}
 function subscribe(e){e.preventDefault();document.getElementById('msg').textContent='✓ Demo completada. Conecta aquí tu plataforma de email para guardar suscriptores.';toast('Formulario preparado para conectar con un proveedor de email.')}
 function filter(){const q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('#categories a').forEach(x=>x.style.display=x.textContent.toLowerCase().includes(q)?'block':'none')}
+
+
+function dismissCookies(accepted){localStorage.setItem('vd_cookie_choice', accepted?'accepted':'necessary');const el=document.getElementById('cookie-banner');if(el)el.remove();}
+window.addEventListener('DOMContentLoaded',()=>{if(localStorage.getItem('vd_cookie_choice')){const el=document.getElementById('cookie-banner');if(el)el.remove();}});

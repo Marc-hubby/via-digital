@@ -2,8 +2,15 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Vida Digital: IA, dinero, productividad, privacidad y herramientas útiles para vivir mejor en la era digital.">
-<title>Vida Digital — Tecnología que te sirve</title>
+<meta name="description" content="Vida Digital: guías prácticas sobre IA, productividad, dinero digital, privacidad y herramientas para aprovechar mejor Internet.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://marc-hubby.github.io/via-digital/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vida Digital — Entiende el futuro. Aprovéchalo hoy.">
+<meta property="og:description" content="IA, herramientas, productividad, dinero digital y privacidad explicados sin humo.">
+<meta property="og:url" content="https://marc-hubby.github.io/via-digital/">
+<meta name="twitter:card" content="summary_large_image">
+<title>Vida Digital — Entiende el futuro. Aprovéchalo hoy.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -43,6 +50,14 @@
 <div class="money-grid"><div class="money-box"><b>€</b><h3>Tu economía también puede automatizarse.</h3><p>Sistemas sencillos para presupuestar, ahorrar y entender tus decisiones financieras sin convertirte en experto.</p><a href="#">Explorar dinero →</a></div>
 <div class="list"><article><b>01</b><div>La regla de las 24 horas para comprar online<small>Psicología · 4 min</small></div></article><article><b>02</b><div>Cómo detectar suscripciones que no utilizas<small>Ahorro · 5 min</small></div></article><article><b>03</b><div>Interés compuesto explicado sin fórmulas aburridas<small>Educación · 6 min</small></div></article></div></div></section>
 
+<section id="recursos" class="section wrap">
+<div class="head"><div><p class="eyebrow">RECURSOS</p><h2>Herramientas que recomendamos</h2><p class="section-intro">Una selección de servicios y herramientas que pueden ayudarte. Algunos enlaces pueden ser de afiliado cuando estén activos.</p></div></div>
+<div class="resource-grid">
+<article class="resource"><span>🤖</span><div><small>IA</small><h3>Herramientas de inteligencia artificial</h3><p>Descubre opciones para escribir, investigar, diseñar y automatizar.</p><a href="#" onclick="toast('Aquí colocaremos el enlace afiliado cuando elijamos el servicio.');return false">Ver recomendación →</a></div></article>
+<article class="resource"><span>⚡</span><div><small>PRODUCTIVIDAD</small><h3>Apps para organizar tu trabajo</h3><p>Selección de herramientas para notas, tareas y automatizaciones.</p><a href="#" onclick="toast('Aquí colocaremos el enlace afiliado cuando elijamos el servicio.');return false">Ver recomendación →</a></div></article>
+<article class="resource"><span>🔐</span><div><small>PRIVACIDAD</small><h3>Seguridad y privacidad</h3><p>Recursos para proteger cuentas, dispositivos y datos personales.</p><a href="#" onclick="toast('Aquí colocaremos el enlace afiliado cuando elijamos el servicio.');return false">Ver recomendación →</a></div></article>
+</div></section>
+
 <section id="herramientas" class="tools"><div class="wrap"><div class="head"><div><p class="eyebrow">LABORATORIO</p><h2>Herramientas gratuitas</h2></div><b class="badge">NUEVO</b></div>
 <div class="tool-grid"><article><span>€</span><h3>Calculadora de ahorro</h3><p>Calcula cuánto acumularías ahorrando cada mes.</p><button onclick="openCalc()">Abrir →</button></article>
 <article><span>✦</span><h3>Generador de ideas</h3><p>Ideas para contenidos, proyectos y negocios digitales.</p><button onclick="idea()">Generar →</button><output id="idea"></output></article>
@@ -57,8 +72,10 @@
 <div class="categories" id="categories"><a href="#ia">✦ <b>Inteligencia Artificial</b><small>Guías y herramientas</small></a><a href="#dinero">€ <b>Dinero</b><small>Ahorro y economía digital</small></a><a href="#productividad">◎ <b>Productividad</b><small>Menos ruido, más resultados</small></a><a href="#privacidad">◈ <b>Privacidad</b><small>Seguridad sin paranoia</small></a></div></section>
 </main>
 
-<footer><div class="wrap footer"><div><a class="logo" href="#"><b>V</b> Vida Digital</a><p>Entiende Internet. Aprovecha la tecnología.</p></div><div><strong>Explorar</strong><a href="#ia">IA</a><a href="#dinero">Dinero</a><a href="#herramientas">Herramientas</a></div><div><strong>Proyecto</strong><a href="#">Sobre nosotros</a><a href="#">Contacto</a><a href="#">Publicidad</a></div></div><div class="wrap copy">© 2026 Vida Digital · Proyecto editorial independiente</div></footer>
+<footer><div class="wrap footer"><div><a class="logo" href="#"><b>V</b> Vida Digital</a><p>Entiende Internet. Aprovecha la tecnología.</p></div><div><strong>Explorar</strong><a href="#ia">IA</a><a href="#dinero">Dinero</a><a href="#recursos">Recursos</a><a href="#herramientas">Herramientas</a></div><div><strong>Proyecto</strong><a href="#">Sobre nosotros</a><a href="#">Contacto</a><a href="#">Publicidad</a><a href="privacy.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="terms.html">Aviso legal</a></div></div><div class="wrap copy">© 2026 Vida Digital · Proyecto editorial independiente</div></footer>
 
 <div id="modal" class="modal"><div class="modal-box"><button onclick="closeCalc()">×</button><p class="eyebrow">HERRAMIENTA</p><h2>Calculadora de ahorro</h2><label>Ahorro mensual (€)<input id="monthly" type="number" value="200"></label><label>Años<input id="years" type="number" value="5"></label><button class="btn dark" onclick="calc()">Calcular</button><div id="result"></div></div></div>
 <div id="toast" class="toast"></div><script src="script.js"></script>
+<div id="cookie-banner" class="cookie-banner"><div><strong>Tu privacidad importa.</strong><p>Usamos cookies y tecnologías similares solo cuando sean necesarias o cuando tú las aceptes. Esta versión no instala analítica por defecto.</p></div><div class="cookie-actions"><button class="btn light" onclick="dismissCookies(false)">Solo necesarias</button><button class="btn dark" onclick="dismissCookies(true)">Aceptar</button></div></div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Vida Digital","url":"https://marc-hubby.github.io/via-digital/","description":"Guías prácticas sobre IA, productividad, dinero digital, privacidad y herramientas."}</script>
 </body></html>
