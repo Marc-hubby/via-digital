@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Vida Digital: IA, dinero, productividad, privacidad y herramientas útiles para vivir mejor en la era digital.">
+<title>Vida Digital — Tecnología que te sirve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="nav wrap"><a class="logo" href="#"><b>V</b> Vida Digital</a>
+<nav id="nav"><a href="#destacados">Destacados</a><a href="#ia">IA</a><a href="#dinero">Dinero</a><a href="#herramientas">Herramientas</a><a href="#newsletter">Newsletter</a></nav>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button></div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid"><div>
+<p class="eyebrow">TECNOLOGÍA PARA LA VIDA REAL</p>
+<h1>Entiende el futuro.<br><i>Aprovéchalo hoy.</i></h1>
+<p class="lead">Ideas, herramientas y estrategias para trabajar mejor, ahorrar tiempo y tomar mejores decisiones en un mundo cada vez más digital.</p>
+<div class="actions"><a class="btn dark" href="#destacados">Explorar historias</a><a class="btn light" href="#herramientas">Herramientas gratis</a></div>
+<div class="proof">● Sin humo &nbsp; ● Guías prácticas &nbsp; ● En español</div>
+</div>
+<article class="hero-story"><div class="muted">HOY · 04 OCT 2026</div><div class="sphere">✦</div><small>INTELIGENCIA ARTIFICIAL</small><h2>La IA ya no es una promesa: es una herramienta.</h2><p>Cómo pasar de “probar IA” a integrarla de verdad en tu día a día.</p><a href="#ia">Leer historia →</a></article>
+</div></section>
+
+<div class="ticker"><div class="wrap ticker-in"><b>🔥 LO MÁS BUSCADO</b><span>IA para trabajar</span><span>Ahorro automático</span><span>Herramientas gratis</span><span>Privacidad</span></div></div>
+
+<section id="destacados" class="section wrap"><div class="head"><div><p class="eyebrow">EDITORIAL</p><h2>Lo que merece tu tiempo</h2></div><a href="#archivo">Ver todo →</a></div>
+<div class="featured"><article class="main-card"><div class="visual ai"><b>AI</b></div><div class="pad"><small>IA · 8 MIN</small><h3>Cómo construir tu propio sistema de IA para trabajar mejor</h3><p>No necesitas ser programador. Un método para convertir herramientas de IA en un sistema que realmente ahorre tiempo.</p><a href="#" onclick="toast('El artículo completo se puede conectar a un CMS más adelante.');return false">Leer artículo →</a></div></article>
+<div class="stack">
+<article class="small"><div class="thumb money">€</div><div><small>DINERO</small><h3>El método de las 3 cuentas para controlar tus gastos</h3><a href="#dinero">6 min →</a></div></article>
+<article class="small"><div class="thumb privacy">◈</div><div><small>PRIVACIDAD</small><h3>7 ajustes del móvil que deberías revisar hoy</h3><a href="#privacidad">5 min →</a></div></article>
+<article class="small"><div class="thumb focus">◎</div><div><small>PRODUCTIVIDAD</small><h3>Deja de usar 12 apps para organizar tu vida</h3><a href="#productividad">7 min →</a></div></article>
+</div></div></section>
+
+<section id="ia" class="dark-section"><div class="wrap"><div class="head"><div><p class="eyebrow">INTELIGENCIA ARTIFICIAL</p><h2>Menos hype. Más utilidad.</h2></div></div>
+<div class="cards"><article><em>01</em><small>GUÍA</small><h3>Qué puedes automatizar esta semana con IA</h3><p>Correo, documentos, investigación, reuniones y tareas repetitivas.</p></article>
+<article><em>02</em><small>COMPARATIVA</small><h3>Qué chatbot elegir según lo que haces</h3><p>Una guía clara para no pagar por cinco herramientas que hacen lo mismo.</p></article>
+<article><em>03</em><small>EXPLICADO</small><h3>Qué es un agente de IA y por qué importa</h3><p>La próxima evolución: sistemas capaces de ejecutar tareas por ti.</p></article></div></div></section>
+
+<section id="dinero" class="section wrap"><div class="head"><div><p class="eyebrow">DINERO DIGITAL</p><h2>Haz que tu dinero trabaje mejor</h2></div></div>
+<div class="money-grid"><div class="money-box"><b>€</b><h3>Tu economía también puede automatizarse.</h3><p>Sistemas sencillos para presupuestar, ahorrar y entender tus decisiones financieras sin convertirte en experto.</p><a href="#">Explorar dinero →</a></div>
+<div class="list"><article><b>01</b><div>La regla de las 24 horas para comprar online<small>Psicología · 4 min</small></div></article><article><b>02</b><div>Cómo detectar suscripciones que no utilizas<small>Ahorro · 5 min</small></div></article><article><b>03</b><div>Interés compuesto explicado sin fórmulas aburridas<small>Educación · 6 min</small></div></article></div></div></section>
+
+<section id="herramientas" class="tools"><div class="wrap"><div class="head"><div><p class="eyebrow">LABORATORIO</p><h2>Herramientas gratuitas</h2></div><b class="badge">NUEVO</b></div>
+<div class="tool-grid"><article><span>€</span><h3>Calculadora de ahorro</h3><p>Calcula cuánto acumularías ahorrando cada mes.</p><button onclick="openCalc()">Abrir →</button></article>
+<article><span>✦</span><h3>Generador de ideas</h3><p>Ideas para contenidos, proyectos y negocios digitales.</p><button onclick="idea()">Generar →</button><output id="idea"></output></article>
+<article><span>⌕</span><h3>Buscador</h3><p>Encuentra rápidamente historias dentro de Vida Digital.</p><button onclick="document.getElementById('search').focus()">Buscar →</button></article></div></div></section>
+
+<section id="privacidad" class="section wrap split"><div><p class="eyebrow">PRIVACIDAD</p><h2>Tu vida digital también es tuya.</h2><p>Guías sencillas para entender qué datos compartes, reducir el rastreo y proteger tus cuentas.</p><a href="#">Ver guías →</a></div><div class="steps"><b>01 <span>Revisa tus permisos</span></b><b>02 <span>Activa 2FA</span></b><b>03 <span>Usa contraseñas únicas</span></b></div></section>
+
+<section id="newsletter" class="newsletter"><div class="wrap news-grid"><div><p class="eyebrow">LA CARTA DEL DOMINGO</p><h2>5 minutos para entender lo importante.</h2><p>Una selección semanal de ideas, herramientas y tendencias. Sin spam.</p></div>
+<form onsubmit="subscribe(event)"><input id="email" type="email" placeholder="tu@email.com" required><button class="btn dark">Quiero recibirla →</button><small id="msg">Demo: conecta este formulario a Brevo, Mailchimp o ConvertKit.</small></form></div></section>
+
+<section id="archivo" class="section wrap"><div class="head"><div><p class="eyebrow">EXPLORAR</p><h2>Encuentra tu próximo rabbit hole</h2></div><input id="search" class="search" oninput="filter()" placeholder="Buscar…"></div>
+<div class="categories" id="categories"><a href="#ia">✦ <b>Inteligencia Artificial</b><small>Guías y herramientas</small></a><a href="#dinero">€ <b>Dinero</b><small>Ahorro y economía digital</small></a><a href="#productividad">◎ <b>Productividad</b><small>Menos ruido, más resultados</small></a><a href="#privacidad">◈ <b>Privacidad</b><small>Seguridad sin paranoia</small></a></div></section>
+</main>
+
+<footer><div class="wrap footer"><div><a class="logo" href="#"><b>V</b> Vida Digital</a><p>Entiende Internet. Aprovecha la tecnología.</p></div><div><strong>Explorar</strong><a href="#ia">IA</a><a href="#dinero">Dinero</a><a href="#herramientas">Herramientas</a></div><div><strong>Proyecto</strong><a href="#">Sobre nosotros</a><a href="#">Contacto</a><a href="#">Publicidad</a></div></div><div class="wrap copy">© 2026 Vida Digital · Proyecto editorial independiente</div></footer>
+
+<div id="modal" class="modal"><div class="modal-box"><button onclick="closeCalc()">×</button><p class="eyebrow">HERRAMIENTA</p><h2>Calculadora de ahorro</h2><label>Ahorro mensual (€)<input id="monthly" type="number" value="200"></label><label>Años<input id="years" type="number" value="5"></label><button class="btn dark" onclick="calc()">Calcular</button><div id="result"></div></div></div>
+<div id="toast" class="toast"></div><script src="script.js"></script>
+</body></html>
